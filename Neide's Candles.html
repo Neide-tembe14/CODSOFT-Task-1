@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle Business</title>
+    <style>
+        /* General Styles */
+        body {
+    background-image: url('https://source.unsplash.com/1600x900/?lit-candles');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white for better contrast */
+    font-family: Arial, sans-serif; /* Set font family */
+}
+
+header,
+nav,
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+    color: #fff; /* White text color for better contrast */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding */
+}
+
+nav a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add margin */
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+nav a:hover {
+    color: #ffcc80; /* Change text color on hover */
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better readability */
+    color: #fff; /* White text color for section content */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Add margin */
+    max-width: 800px; /* Set max width */
+    text-align: center; /* Center align text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; /* Center align headings */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for better readability */
+    color: #000; /* Black text color for input fields */
+    width: 100%; /* Set input width */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border-radius: 5px; /* Add border radius */
+    border: 1px solid #ccc; /* Add border */
+}
+
+#contact textarea {
+    height: 100px; /* Set textarea height */
+}
+
+#contact button {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add border radius */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+#contact button:hover {
+    background-color: #444; /* Change button background color on hover */
+}
+
+
+		
+
+        /* About Section */
+        #about {
+            background-color: rgba(255, 204, 128, 0.5);
+            text-align: center;
+        }
+
+        /* Products Section */
+        #products {
+            background-color: rgba(255, 204, 128, 0.5);
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: rgba(255, 204, 128, 0.5);
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contact textarea {
+            height: 100px;
+        }
+
+        #contact button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact button:hover {
+            background-color: #444;
+			
+        }
+		<style>
+        .social-media {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Display list items horizontally */
+        }
+        .social-media li {
+            margin-right: 10px; /* Add spacing between list items */
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Candle Business</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p><strong>Kindliy keep refreshing this page to view the various different theme's available&nbsp;</strong></p>
+<p>We are a small business dedicated to crafting handmade scented candles. Our passion for creating unique and aromatic candles drives us to meticulously hand-pour each one, ensuring quality and attention to detail in every step of the process.</p>
+        <p>At our workshop, we carefully select premium ingredients to infuse our candles with captivating scents that evoke warmth, tranquility, and joy. From soothing lavender to invigorating citrus, our diverse range of fragrances caters to various preferences and moods.</p>
+        <p>Our commitment to sustainability extends beyond our products. We prioritize eco-friendly practices by using renewable resources and minimizing waste throughout our production process. By supporting us, you not only indulge in luxurious scents but also contribute to a greener environment.</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+        <div class="product">
+            <img src="https://source.unsplash.com/800x600/?candle" alt="Product 1">
+            <img src="https://source.unsplash.com/800x600/?candlelight" alt="Product 2">
+            <img src="https://source.unsplash.com/800x600/?romantic,candle" alt="Product 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        
+		<ul class="social-media">
+    <a href="https://www.facebook.com"><img src="face.png" alt="Facebook" width="30" height="30"></a>
+    <a href="https://www.twitter.com"><img src="twit.png" alt="Twitter" width="44" height="30"></a>
+    <a href="https://www.instagram.com"><img src="insta.png" alt="Instagram" width="30" height="30"></a>
+      </ul>
+
+      <p>&copy; 2024 Candle Business. All rights reserved.</p>
+    </footer>
+</body>
+</html>
